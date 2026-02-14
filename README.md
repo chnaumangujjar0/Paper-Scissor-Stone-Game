@@ -1,6 +1,6 @@
 # Paper-Scissor-Stone-Game
 
-<img src="image.png" width="600px" height="500px">
+<img src="image.png"  height="600px">
 
 <h1>✊✋✌️ Rock Paper Scissors Game</h1>
 
