@@ -10,7 +10,7 @@ let opponent;
 let userScore=0;
 let oppScore=0;
 
-let random=()=>{
+let getRandomChoice=()=>{
    let threeShot=["scissor","paper","stone"]
    let choice=threeShot[Math.floor(Math.random() * 3)]
   return choice;
@@ -21,7 +21,7 @@ buttons.forEach((b)=>{
    b.addEventListener("click",(e)=>{
     you=e.target.dataset.choice;
     yourChoice.innerHTML=you;
-    opponent=random();
+    opponent=getRandomChoice();
     opponentChoice.innerHTML=opponent;
 
     if(you == opponent){
@@ -46,9 +46,9 @@ buttons.forEach((b)=>{
 
 reset.addEventListener("click",()=>{
    yourChoice.innerHTML="";
-   yourScore.innerHTML="";
+   yourScore.innerHTML=0;
    opponentChoice.innerHTML="";
-   opponentScore.innerHTML="";
+   opponentScore.innerHTML=0;
    result.innerHTML="Let's Play Again";
    oppScore=0;
    userScore=0;
