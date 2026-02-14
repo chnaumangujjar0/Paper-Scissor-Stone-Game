@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link  rel="stylesheet" href="style.css">
+ </head>
+<body>
+    <div id="game">
+       <h1>Scissor,Paper and Stone Game</h1>
+        <div class="container">
+          <div class="btn-container">
+            <button class="buttons" data-choice="paper"><i data-choice="paper" class="fa-solid fa-hand"> P a  p e r</i></button>
+            <button class="buttons" data-choice="scissor"><i data-choice="scissor" class="fa-solid fa-hand-scissors"> S c i s s o r</i></button>
+            <button class="buttons" data-choice="stone"><i data-choice="stone" class="fa-solid fa-hand-back-fist"> S t o n e</i></button>
+          </div>
+          <div class="result-container">
+            <p>Your Score: <span class="your-score"></span></p>
+            <p>Oponent Score: <span class="opponent-score"></span></p>
+            <br>
+            <br>
+            <p>Your Choice: <span class="your-choice"></span></p>
+            <p>Oponent Choice: <span class="opponent-choice"></span></p>
+          </div>
+       </div>
+      <div>
+         <h1 class="result">Let's Play</h1>
+        <button class="reset">Reset</button>
+    </div>
+    </div>
+    <script
+    src="script.js">
+</script>
+</body>
+</html>
